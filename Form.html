@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2>
+    <form autocomplete="on" >
+    <br>
+        <fieldset>
+            <legend>Personal Information</legend>
+    <label for="captcha">Enter the captcha:</label>
+    <input type="text" id="captcha" placeholder="Enter Captch..." name="captcha" required>
+    <br>
+    <br>
+    <label for="un">User Name: </label>
+    <input type="text" placeholder="Enter UserName..." name="un" id="un">
+    <br>
+    <br>
+    <label for="email">Email :</label>
+    <input type="email" name="email" id="email" placeholder="Enter Email....">
+    <br>
+    <br>
+    <label for="pwd">Password: <span style="color: red;">*</span></label>
+    <input type="password" name="password" id="pwd" placeholder="Enter a password..." required>
+    <br>
+    <br>
+    <label for="Mob">Mobile: </label>
+    <input type="tel" name="mobile" id="Mob" placeholder="Enter mobile number">
+    <br>
+    <br>
+    <label for="age">Age : </label>
+    <input type="number" name="age" id="age" min="1" max="200">
+    <br>
+    <br>
+    <label>Date of birth: </label>
+    <input type="datetime-local">
+    <br>
+    <br>
+    <label>Preferred Time: </label>
+    <input type="time">
+    <br>
+    <br>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Additional Information</legend>
+    <label>Url: </label>
+    <input type="url" placeholder="Enter URL...">
+    <br>
+    <br>
+    <label>Rate out of 5 :</label>
+    <input type="range" min="1" max="5" value="0">
+    <br>
+    <br>
+    <label><input type="checkbox" name="opt1" value="Cash"> Cash</label>
+    <label><input type="checkbox" name="opt2" value="UPI"> UPI</label>
+    <label><input type="checkbox" name="opt3" value="Card"> Card</label>
+    <br>
+    <br>
+    <label> Gender : </label>
+    <input type="radio" name="gender" value="male"> Male
+    <input type="radio" name="gender" value="female"> Female
+    <input type="radio" name="gender" value="other"> Other
+    <br>
+    <br>
+    <label>Hobbies:</label>
+    <input type="checkbox" name="hobby1" value="Reading"> Reading
+    <input type="checkbox" name="hobby2" value="Traveling"> Traveling
+    <input type="checkbox" name="hobby3" value="Music"> Music
+    <br>
+    <br>
+    <label> You allowed :</label>
+    <input type="hidden">
+    <br>
+    <br>
+   
+    </fieldset>
+    <br>
+    <fieldset>
+        <legend>Selection</legend>
+    <br>
+     <label for="tech">Choose the Technical Skills:</label>
+    <select name="tech" id="tech">
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+    </select>
+    <br>
+    <br>
+    <label>Please Upload Pan-Card File:</label>
+    <input type="file" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png">
+    <br>
+    <br>
+    <label>Please upload Adhar card</label>
+    <input type="file" accept=".pdf, .doc, .docx, .jpg, .jpeg, .png">
+    <br>
+    <br>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Comments</legend>
+    <textarea id="Comments" name="Comments" rows="5" cols="50" placeholder="Write Your Comment"></textarea>
+    <br>
+    </fieldset>
+    <br>
+    <input type="submit"> &nbsp;  &nbsp;  &nbsp; &nbsp;
+    <button type="reset">Cancel</button>
+    </form>
+</body>
+</html>
